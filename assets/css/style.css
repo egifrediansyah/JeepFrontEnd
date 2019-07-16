@@ -46,6 +46,61 @@ Author: madsparrow.us
 /*Social icons font*/
 @import '../../../../d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf39e1.css?rd5re8';
 
+.animated{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 5s infinite ;
+}
+.fadeInDown{
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+}
+@keyframes fadeInDown{
+    0%{
+        transform: translate3d(0px,-50%,0);
+        -webkit-transform: translate3d(0px,-50%,0);
+    }
+
+    50%{
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+    }
+
+}
+.swing{
+    transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    animation-name: swing;
+    -webkit-animation-name: swing;
+    -ms-animation-name: swing;
+}
+
+@keyframes swing{
+    20%{
+        transform: rotate3d(0,0,1, 15deg);
+        -webkit-transform: rotate3d(0,0,1, 15deg);
+    }
+    40%{
+        transform: rotate3d(0,0,1, -10deg);
+        -webkit-transform: rotate3d(0,0,1, -10deg);
+    }
+    60%{
+        transform: rotate3d(0,0,1, 5deg);
+        -webkit-transform: rotate3d(0,0,1, 5deg);
+    }
+    80%{
+        transform: rotate3d(0,0,1, -5deg);
+        -webkit-transform: rotate3d(0,0,1, -5deg);
+    }
+    100%{
+        transform: rotate3d(0,0,1, 0deg);
+        -webkit-transform: rotate3d(0,0,1, 0deg);
+    }
+}
+
 ::selection {
     background: #555;   
     color: #fff;
@@ -62,6 +117,7 @@ body {
     font-family: 'Yantramanav', Arial, sans-serif;
     color: #151515;
 }
+
 article,
 aside,
 details,
@@ -74,7 +130,7 @@ section {
     display: block;
 }
 a {
-    color: #df1f29;
+    color: white;
     text-decoration: none;
 }
 blockquote {
@@ -287,7 +343,7 @@ p {
     height: .1rem;
     width: 2rem;
     margin-right: .7rem;
-    background: #df1f29;
+    background: white;
     transition: width .3s ease;
 }
 .ms-btn--slider:hover::before {
@@ -354,6 +410,7 @@ p {
 }
 .navbar-white .hamburger-label {
     color: #fff;
+    text-shadow: 1px 2px 1px #003242;
 }
 .hamburger-label {
     display: block;
@@ -488,6 +545,7 @@ p {
     font-size: 1.75em;
     letter-spacing: .02em;
     color: #fff;
+    text-shadow: 2px 1px 1px #003242;
     font-weight: 700 !important;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -499,7 +557,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #df1f29;
+    background: #212121;
     height: .1rem;
     top: 50%;
     width: 0;
@@ -528,7 +586,7 @@ p {
 .nav-item:active .ms-btn,
 .nav-item:focus .ms-btn,
 .nav-item:hover .ms-btn {
-    color: #df1f29;
+    color: 	#212121;
     opacity: 1;
     padding-left: 2.4rem;
 }
@@ -656,6 +714,7 @@ p {
     text-transform: uppercase;
     color: #fff;
     letter-spacing: .2em;
+    text-shadow: 1px 2px 1px #003242;
     line-height: 2em;
     font-size: 12px;
     width: auto;
@@ -741,6 +800,7 @@ p {
     text-transform: uppercase;
     font-weight: 900;
     line-height: 1em;
+    text-shadow: 2px 7px 1px #003242;
     color: #fff;
 }
 .slide--info__link {
