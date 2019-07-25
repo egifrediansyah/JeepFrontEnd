@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="assets/css/plugins.min.css">
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
   </head>
   <body>
     <div class="ms-main-container">
@@ -45,22 +48,8 @@
               <!-- Nav Link -->
               <li class="nav-item">
                 <a href="albums.html" data-type="page-transition">
-                  <span class="ms-btn">albums</span>
-                  <span class="nav-item__label">View all our works</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="blog.html" data-type="page-transition">
-                  <span class="ms-btn">blog</span>
-                  <span class="nav-item__label">Discover fascinating stories</span>
-                </a>
-              </li>
-              <!-- Nav Link -->
-              <li class="nav-item">
-                <a href="about.html" data-type="page-transition">
-                  <span class="ms-btn">about</span>
-                  <span class="nav-item__label">Learn more about the author</span>
+                  <span class="ms-btn">Gallery</span>
+                  <span class="nav-item__label">Gallery Jeep</span>
                 </a>
               </li>
               <!-- Nav Link -->
@@ -79,21 +68,44 @@
         <!-- Page Title -->
         <div class="ms-section__block">
           <div class="ms-page-title">
-            <h2 class="page-header">who am i?</h2>
-            <p class="page-desc">Assertively synthesize state of the art testing procedures via sticky niches.</p>
+            <h2 class="page-header">JEEP®CHEROKEE</h2>
+            <p class="page-desc">Features of Jeep Cherokee.</p>
           </div>
         </div>
         <!-- Page Content -->
         <div class="ms-section__block">
           <div id="about" class="row">
             <div class="about__img col-md-12">
-              <p><img src="assets/images/14about.jpg" alt="img"></p>
-            </div>
-            <div class=" center-block">
-              <div class="about__info col-md-8">
-                <p>Efficiently morph customer directed internal or "organic" sources before multidisciplinary users. Credibly disseminate resource maximizing human capital before revolutionary e-services. Collaboratively parallel task resource-leveling markets after professional data. Professionally streamline user-centric benefits without scalable strategic theme areas. Interactively develop backward-compatible expertise through high-payoff supply chains.</p>
-                <p>Professionally exploit value-added methodologies with bleeding-edge leadership. Professionally actualize bleeding-edge partnerships rather than real-time testing procedures. Continually maintain state of the art "outside the box" thinking and sustainable services. Distinctively matrix transparent resources for resource sucking technology. Continually benchmark corporate "outside the box" thinking via fully tested mindshare.</p>
+                <div class="w3-content w3-display-container">
+                    <div class="w3-display-container mySlides">
+                      <img src="assets/images/jeepcheroke1.jpg" style="width:75%; margin-left: 10%;" onclick="plusDivs(-1)">                    
+                      </div>
+                    </div>
+                    <div class="w3-display-container mySlides">
+                      <img src="assets/images/jeepcheroke2.jpg" style="width:75%; margin-left: 10%;" onclick="plusDivs(-1)">                      
+                    </div>
+                    <div class="w3-display-container mySlides">
+                      <img src="assets/images/jeepcheroke3.jpg" style="width:75%; margin-left: 10%;" onclick="plusDivs(-1)">
+                    </div>
+                    <div class="w3-display-container mySlides">
+                      <img src="assets/images/jeepcheroke4.jpg" style="width:75%; margin-left: 10%;" onclick="plusDivs(-1)">
+                    </div>
+                    <div class="w3-display-container mySlides">
+                      <img src="assets/images/jeepcheroke5.jpg" style="width:75%; margin-left: 10%;" onclick="plusDivs(-1)">
+                    </div>
+                    <div class="w3-display-container mySlides">
+                        <img src="assets/images/jeepcheroke6.jpg" style="width:75%; margin-left: 10%;" onclick="plusDivs(-1)">
+                    </div>
+                    <div class="w3-display-container mySlides">
+                        <img src="assets/images/jeepcheroke7.jpg" style="width:75%; margin-left: 10%;" onclick="plusDivs(-1)">
+                    </div>
+                    <div class="w3-display-container mySlides">
+                        <img src="assets/images/jeepcheroke8.jpg" style="width:75%; margin-left: 10%;" onclick="plusDivs(-1)">
+                    </div>
+                    </div>
               </div>
+            <div class="center-block">
+                <p>Cherokee ditawarkan dengan banyak fitur di semua varian yang membuatnya kompeten di segmen SUV. Powering the Cherokee Limited AWD adalah 2.360 cc yang menghasilkan daya maksimum 183 hp sementara torsi puncak berbunyi 232 Nm. Model teratas Cherokee cukup efisien dan memberikan angka mengesankan berkisar antara 9,3 kmpl di kota. Kisaran lebih jauh didorong ke 12,3 kmpl di jalan raya.</p>
             </div>
           </div>
         </div>
@@ -118,6 +130,27 @@
     <script type="text/javascript" src='assets/js/plugins.min.js'></script>
     <!-- Main js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+        
   </body>
 
 <!-- Mirrored from madsparrow.me/emily/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2019 07:48:12 GMT -->
